@@ -8,6 +8,7 @@ class Product(models.Model):
     def __str__(self):
         return f"Product - {self.name}"
 
+
 class Order(models.Model):
     order_code = models.CharField(max_length=100, null=False, blank=False)
     id_channel = models.IntegerField(null=True, blank=True)
